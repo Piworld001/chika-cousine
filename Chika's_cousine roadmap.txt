@@ -1,0 +1,45 @@
+We want to have something like logo
+Okay, then we want to have another thing
+Like,
+Navigation link
+I just enough
+Lovely
+Mathleen
+But you know it's not link
+So, after the nav length, we are going to have a login
+Login button
+We're going to have login
+Okay? So, after this
+We are going to have a main section
+Are you sure we are
+We're okay with this. So, we are going to have what
+Men's section
+We are going to have main section, okay? I think this is taking time.
+But
+But to understand what I want to do, we will have main session inside the main, we are going to have a 5 to 6 sections. One section will be hero. Inside the hero, we have background image, we'll have heading, we have description, we have button
+Then the next section we will have about inside the about, we have image, we have description. Then another section we have the product
+inside there will have, like, Swiss products. These Swiss products will be a card. Then after that we have another section of testimony. Inside this testimonia we will put some customers to give testimony. It will be like a
+Raycast we will have there. Then after that, we have another section that will be contacts. Inside that contact section, we have contact form. After that, we have your footer. The footer is going to be what will be inside the footer will be like the company information, quick link, product.
+social media, and copyright. Is that okay
+
+
+logo
+<div class=logo>
+HOME
+A resturant where every bite or sip feels the right kind of nostalgic
+<nav class="navbar">
+ABOUT 
+/*card*/
+motto: your satisfaction, our priority.
+About: The chika's cousine is not just a resturant but an environment nourished by the ecosystem and fit for relaxation. It has three sections:
+1. Private rooms designed for business meetings, friend's get together and even birthday parties.
+2. General combined space for our esteemed customers who just wants to dash in and grab quick meals or takeouts, and even quick conversations.
+3. An outdoor space for our lovelies who just want to sip coffee in the morning sun, picnic lovers and all who just want to connect with nature.
+we also have various intercontinental dishes to view please click delicacies.html
+To order online, click here contact.html
+DELICACIES
+<p>We prioritize satisfaction and encourage diversity therefore we have included different delicacies in our menu. Now please find the cousine of your choice and Enjoy.</p>
+for the delicacies, In the menu make a dropdown for coffee add different types of coffee(drank in nigeria), for tea(Nigerian tea,american tea and chinese tea),for rice(nigerian, american,chinese dishes enjoyed by nigerians and foreigners), for swallow(different swallow in nigerian cousine), for soup(different soup in the nigerian cousine), for spaghetti(the spaghetti recipies that's most enjoyed in nigeria), for yam(different recipies for yam enjoyed in nigeria), finally make a space for other dishes include shawarma, burgers, cookies stuff like that and class them together, finally this is for the others (here include major nigerian, american and chinese delicacies enjoyed in nigeria by most including foreignersthat i ommited)
+then when the person clicks on a particular dropdown show them the menu variety for that one.
+CONTACT 
+For futher enquiries contact our chat assistant.

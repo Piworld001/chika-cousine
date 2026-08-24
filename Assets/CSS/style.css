@@ -1,0 +1,642 @@
+/* ========================
+   RESET
+======================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ========================
+   GLOBAL SETTINGS
+======================== */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #3B2416;
+    background-color: #FAF3E5;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+
+/* ========================
+   HEADER
+======================== */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+
+    background-color: #FAF3E5;
+    padding: 1.5rem 3rem;
+}
+
+
+
+/* ========================
+   NAVIGATION
+======================== */
+
+header > .logo {
+    padding-top: 1.5rem;
+    text-align: left;
+}
+
+.logo a {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #3B2416;
+    letter-spacing: 2px;
+}
+
+/* ========================
+   NAVIGATION
+======================== */
+
+nav {
+    display: flex;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: #3B2416;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #6B7650;
+}
+
+
+/* ========================
+   LOGIN & ORDER BUTTONS
+======================== */
+
+.login-btn {
+    display: flex;
+    gap: 0.8rem;
+}
+
+.login-btn a {
+    padding: 0.6rem 1.2rem;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.login-btn a:first-child {
+    border: 1px solid #6B7650;
+    color: #3B2416;
+}
+
+.login-btn a:first-child:hover {
+    background-color: #6B7650;
+    color: #FAF3E5;
+}
+
+.login-btn a:last-child {
+    background-color: #3B2416;
+    color: #FAF3E5;
+}
+
+.login-btn a:last-child:hover {
+    background-color: #6B7650;
+}
+
+/* ========================
+   HERO SECTION
+======================== */
+
+.hero {
+    min-height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 2rem;
+    background-color: #E8D5B5;
+}
+
+.hero-content {
+    max-width: 700px;
+    text-align: center;
+}
+
+.hero-content h1 {
+    color: #3B2416;
+    font-size: clamp(2.5rem, 6vw, 5rem);
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto 2rem;
+    color: #4D392B;
+}
+/* ========================
+   ABOUT SECTION
+======================== */
+
+#about {
+    padding: 6rem 2rem;
+    background-color: #FAF3E5;
+}
+
+
+/* ========================
+   ABOUT INTRO
+======================== */
+
+.about-intro {
+    max-width: 800px;
+    margin: 0 auto 4rem;
+    text-align: center;
+}
+
+.section-label {
+    color: #6B7650;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 0.5rem;
+}
+
+.about-intro h2 {
+    font-size: 2.5rem;
+    color: #3B2416;
+    margin-bottom: 1rem;
+}
+
+.motto {
+    font-size: 1.3rem;
+    font-style: italic;
+    color: #6B7650;
+    margin-bottom: 1.5rem;
+}
+
+.about-text {
+    font-size: 1.1rem;
+    color: #4D392B;
+}
+
+
+/* ========================
+   RESTAURANT EXPERIENCES
+======================== */
+
+.experience-container {
+    max-width: 1100px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+
+/* ========================
+   EXPERIENCE
+======================== */
+
+.experience {
+    overflow: hidden;
+
+    background-color: #F5E9D2;
+
+    border-radius: 14px;
+
+    box-shadow:
+        0 8px 22px rgba(59, 36, 22, 0.10);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.experience:hover {
+    transform: translateY(-7px);
+
+    box-shadow:
+        0 14px 30px rgba(59, 36, 22, 0.15);
+}
+
+
+/* ========================
+   EXPERIENCE IMAGE
+======================== */
+
+.experience-image {
+    overflow: hidden;
+}
+
+.experience-image img {
+    width: 100%;
+    height: 270px;
+
+    object-fit: cover;
+
+    transition: transform 0.4s ease;
+}
+
+.experience:hover .experience-image img {
+    transform: scale(1.04);
+}
+
+
+/* ========================
+   EXPERIENCE CONTENT
+======================== */
+
+.experience-content {
+    padding: 1.5rem;
+}
+
+.experience-number {
+    color: #6B7650;
+
+    font-size: 0.8rem;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 0.4rem;
+}
+
+.experience-content h3 {
+    color: #3B2416;
+
+    font-size: 1.4rem;
+
+    margin-bottom: 0.8rem;
+}
+
+.experience-content p:last-child {
+    color: #4D392B;
+
+    font-size: 0.95rem;
+}
+
+
+/* ========================
+   ABOUT CTA
+======================== */
+
+.about-cta {
+    text-align: center;
+
+    margin-top: 4rem;
+}
+
+.about-cta > p {
+    font-size: 1.2rem;
+
+    margin-bottom: 1.5rem;
+}
+
+.cta-btn {
+    display: inline-block;
+
+    padding: 0.8rem 1.5rem;
+
+    margin: 0.3rem;
+
+    background-color: #3B2416;
+
+    color: #FAF3E5;
+
+    border-radius: 6px;
+
+    font-weight: 600;
+
+    transition: 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #6B7650;
+}
+
+.secondary-btn {
+    background-color: #6B7650;
+}
+
+.secondary-btn:hover {
+    background-color: #3B2416;
+}
+/* ========================
+   DELICACIES SECTION
+======================== */
+
+#delicacies {
+    padding: 6rem 2rem;
+    background-color: #E8D5B5;
+}
+
+.delicacies-intro {
+    max-width: 750px;
+    margin: 0 auto 3rem;
+    text-align: center;
+}
+
+.delicacies-intro h2 {
+    color: #3B2416;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.delicacies-intro > p:last-child {
+    color: #4D392B;
+    font-size: 1.05rem;
+}
+
+
+/* ========================
+   MENU CONTAINER
+======================== */
+
+.menu-container {
+    max-width: 950px;
+    margin: auto;
+}
+
+
+/* ========================
+   MENU CATEGORY
+======================== */
+
+.menu-category {
+    background-color: #FAF3E5;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(59, 36, 22, 0.08);
+}
+
+
+/* ========================
+   CATEGORY TITLE
+======================== */
+
+.menu-category summary {
+    cursor: pointer;
+
+    padding: 1.2rem 1.5rem;
+
+    font-size: 1.2rem;
+    font-weight: 700;
+
+    color: #3B2416;
+
+    list-style: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    transition: background-color 0.3s ease;
+}
+
+.menu-category summary::-webkit-details-marker {
+    display: none;
+}
+
+.menu-category summary::after {
+    content: "+";
+
+    font-size: 1.5rem;
+    color: #6B7650;
+}
+
+.menu-category[open] summary::after {
+    content: "−";
+}
+
+.menu-category summary:hover {
+    background-color: #F5E9D2;
+}
+
+
+/* ========================
+   MENU ITEMS
+======================== */
+
+.menu-items {
+    padding: 0 1.5rem 1.5rem;
+}
+
+.menu-item {
+    display: grid;
+
+    grid-template-columns: 1fr auto auto;
+
+    align-items: center;
+
+    gap: 1.5rem;
+
+    padding: 1.2rem 0;
+
+    border-top: 1px solid #E8D5B5;
+}
+
+.menu-item h3 {
+    color: #3B2416;
+    font-size: 1rem;
+    margin-bottom: 0.2rem;
+}
+
+.menu-item p {
+    color: #6A5140;
+    font-size: 0.85rem;
+}
+
+.menu-item span {
+    color: #3B2416;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+
+/* ========================
+   ORDER BUTTON
+======================== */
+
+.menu-item a {
+    background-color: #6B7650;
+
+    color: #FAF3E5;
+
+    padding: 0.5rem 1rem;
+
+    border-radius: 5px;
+
+    font-size: 0.85rem;
+    font-weight: 600;
+
+    transition: background-color 0.3s ease;
+}
+
+.menu-item a:hover {
+    background-color: #3B2416;
+}
+
+
+/* ========================
+   MOBILE MENU
+======================== */
+
+@media (max-width: 700px) {
+
+    .menu-item {
+        grid-template-columns: 1fr auto;
+        gap: 0.8rem;
+    }
+
+    .menu-item span {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .menu-item a {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+}
+/*=============
+FOOTER
+==============*/
+footer{
+    color: #3B2416;
+    background-color: #FAF3E5;
+    padding: 4rem 2rem 1.5rem;
+}
+.footer-container {
+    max-width: 1100px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 3rem;
+}
+/* ========================
+   FOOTER COLUMNS
+======================== */
+
+.footer-column h3 {
+    color: #D9C49A;
+
+    font-size: 1.1rem;
+
+    margin-bottom: 1.2rem;
+}
+
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+
+.footer-column li {
+    margin-bottom: 0.7rem;
+}
+
+
+.footer-column a {
+    color: #6B7650;
+    text-decoration: none;
+
+    font-size: 0.9rem;
+
+    transition: color 0.3s ease;
+}
+
+
+.footer-column a:hover {
+    color: #A8B27A;
+}
+/* ========================
+   CONTACT DETAILS
+======================== */
+
+.footer-column p {
+    color: #6B7650;
+
+    font-size: 0.9rem;
+
+    margin-bottom: 0.7rem;
+}
+
+
+/* ========================
+   FOOTER BOTTOM
+======================== */
+
+.footer-bottom {
+    max-width: 1100px;
+
+    margin: 3rem auto 0;
+
+    padding-top: 1.5rem;
+
+    border-top: 1px solid rgba(250, 243, 229, 0.2);
+
+    text-align: center;
+}
+
+
+.footer-bottom p {
+    color: #6B7650;
+    font-size: 0.8rem;
+}
+
+
+/* ========================
+   RESPONSIVE FOOTER
+======================== */
+
+@media (max-width: 700px) {
+
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+}
+
+
+@media (max-width: 450px) {
+
+    .footer-container {
+        grid-template-columns: 1fr;
+    }
+
+}
