@@ -54,7 +54,6 @@ header {
 }
 
 
-
 /* ========================
    NAVIGATION
 ======================== */
@@ -161,6 +160,7 @@ nav {
     margin: 0 auto 2rem;
     color: #4D392B;
 }
+
 /* ========================
    ABOUT SECTION
 ======================== */
@@ -219,6 +219,27 @@ nav {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
+}
+/* large screen */
+@media (max-width:1024px){
+    .experience-container{
+        grid-template-columns: repeat(2,1fr);
+        margin: 0 auto;
+    }
+}
+/* ipad medium screen */
+@media (max-width:768px){
+    .experience-container{
+        grid-template-columns:repeat(1fr);
+        margin: 0 auto;
+    }
+}
+/* small screen */
+@media (max-width: 375px){
+    .experience-container{
+        grid-template-columns: 1fr;
+        margin: 0 auto;
+    }
 }
 
 
@@ -306,22 +327,22 @@ nav {
 
 
 /* ========================
-   ABOUT CTA
+   ABOUT OUR OFFERS
 ======================== */
 
-.about-cta {
+.about-offers {
     text-align: center;
 
     margin-top: 4rem;
 }
 
-.about-cta > p {
+.about-offers  p {
     font-size: 1.2rem;
 
     margin-bottom: 1.5rem;
 }
 
-.cta-btn {
+.offers-btn {
     display: inline-block;
 
     padding: 0.8rem 1.5rem;
@@ -339,7 +360,7 @@ nav {
     transition: 0.3s ease;
 }
 
-.cta-btn:hover {
+.offers-btn:hover {
     background-color: #6B7650;
 }
 
@@ -511,7 +532,7 @@ nav {
    MOBILE MENU
 ======================== */
 
-@media (max-width: 700px) {
+@media (max-width: 1024px) {
 
     .menu-item {
         grid-template-columns: 1fr auto;
