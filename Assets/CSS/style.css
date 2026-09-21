@@ -51,6 +51,9 @@ header {
 
     background-color: #FAF3E5;
     padding: 1.5rem 3rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 
@@ -230,17 +233,17 @@ nav {
 /* ipad medium screen */
 @media (max-width:768px){
     .experience-container{
-        grid-template-columns:repeat(1fr);
-        margin: 0 auto;
-    }
-}
-/* small screen */
-@media (max-width: 375px){
-    .experience-container{
         grid-template-columns: 1fr;
         margin: 0 auto;
     }
 }
+/* small screen */
+/* @media (max-width: 375px){
+    .experience-container{
+        grid-template-columns: 1fr;
+        margin: 0 auto;
+    }
+} */
 
 
 /* ========================
@@ -660,4 +663,75 @@ footer{
         grid-template-columns: 1fr;
     }
 
+}
+
+
+
+/* ========================
+   MOBILE RESPONSIVENESS
+======================== */
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1.2rem 1.5rem;
+        text-align: center;
+    }
+
+    header > .logo {
+        padding-top: 0;
+        text-align: center;
+    }
+
+    nav {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .nav-links {
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .login-btn {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .hero {
+        min-height: auto;
+        padding: 4rem 1.5rem;
+    }
+
+    #about,
+    #delicacies {
+        padding: 4rem 1.5rem;
+    }
+
+    .experience-container {
+        grid-template-columns: 1fr;
+    }
+
+    .experience-image img {
+        height: 230px;
+    }
+
+    .menu-item {
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+    }
+
+    .menu-item span,
+    .menu-item a {
+        grid-column: auto;
+        grid-row: auto;
+    }
+
+    .menu-item a {
+        display: inline-block;
+        width: fit-content;
+    }
 }
